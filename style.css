@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+nav ul {
+    background-color: #fbb346;
+    color: white; 
+    font-weight: bold;
+    width: 100%; 
+    height: 55px;
+    list-style-type: none;
+    font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameContainer{
+    display: flex; 
+    margin-top: 50px; 
+    justify-content: center; 
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+.box{
+    border: 2px solid 	#5C4033;
+    font-size: 8vw;
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center;
+}
+.box:hover{
+    background-color: #C8D9F0 ;
+}
+.gameInfo{
+    padding: 0 54px;
+}
+.gameInfo h1{
+    color: #fb8500;
+    line-height: 32px;
+    font-weight: bold;
+}
+.imgbox img{
+    width: 0; 
+    transition: 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0; 
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 33px;
+    padding: 2px 15px 8px;
+    background-color: #ff6242;
+    color: white;
+    border: 2px solid #f44336;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+}
+#reset :hover{
+    background-color: transparent;
+}
+.info{
+    font-size: 32px;
+    
+}
+
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #fbb346;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.leaderboard {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.leaderboard h2 {
+    color: #fb8500;
+    text-align: center;
+}
+
+#leaderboardList {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+#winningLine {
+    position: absolute;
+    height: 4px;
+    background-color: red;
+    transform-origin: left center;
+    display: none; 
+}
+
+.popup{
+    justify-items: center;
+    text-align: center;
+    border-radius: 3px;
+}
+.ok{
+    background-color: #fbb346;
+    color: white; 
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    border: 1px transparent;
+    border-radius: 10px;
+
+}
+.namePopup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    
+}
+.start{
+    background-color: #fbb346;
+    color: white; 
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    border: 1px transparent;
+    border-radius: 10px;
+
+}
+.nametext{
+    margin: 10px
+}
+#playerXName,
+#playerOName {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%; 
+    box-sizing: border-box;
+}
+
+.popup {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff3e0; 
+    border: 2px #fbb346 transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+.nametext {
+    
+    color:black;
+    font-size: 25px;
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+
+#playerXName,
+#playerOName {
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #fbb346;
+    border-radius: 4px;
+    width: 90%; 
+    box-sizing: border-box;
+}
+
+
+.start {
+    background-color: #fbb346; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.start:hover {
+    background-color: #e69a2a; 
+}

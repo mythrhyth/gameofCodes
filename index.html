@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <nav> 
+        <ul>
+            <li>Tic-Tac-Toe</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="container" id="gameBoard">
+            <!-- Game Board Boxes -->
+            <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box bt-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bt-0"><span class="boxtext"></span></div>
+            <div class="box bl-0"><span class="boxtext"></span></div>
+            <div class="box"><span class="boxtext"></span></div>
+            <div class="box br-0"><span class="boxtext"></span></div>
+            <div class="box bl-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0"><span class="boxtext"></span></div>
+            <div class="box bb-0 br-0"><span class="boxtext"></span></div>
+            <!-- Winning line -->
+            <div id="winningLine"></div>
+        </div>
+        <div class="gameInfo">
+            <h1>Let's Play!</h1>
+            <div>
+                <span class="info">Turn for X</span>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="imgbox">
+                 <img src="cheer-happy.gif"> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for player names -->
+    <div id="namePopup" class="popup">
+        <h2 class = "nametext">Enter Player Names</h2>
+        <label class = "nametext player">Player X <input type="text" id="playerXName" placeholder="Player 1"></label><br>
+        <label class = "nametext player">Player O <input type="text" id="playerOName" placeholder="Player 2"></label><br>
+        <button class = "start nametext" onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- Winner announcement popup -->
+    <div id="winnerPopup" class="popup">
+        <h2 id="winnerText"></h2>
+        <button class = 'ok' onclick="closeWinnerPopup()">OK</button>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboardList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
